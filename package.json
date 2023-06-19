@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "tsnd ./src/index.ts",
+    "dev": "NODE_ENV=development tsnd ./src/index.ts",
     "build": "esbuild ./src/index.ts --platform=node --bundle --minify --outfile=index.js",
     "test": "jest"
   },
