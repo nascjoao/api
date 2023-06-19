@@ -1,4 +1,4 @@
-import getPinnedRepos from '../services/getPinnedRepos';
+import getPinnedRepos from '../src/services/getPinnedRepos';
 import axios from 'axios';
 
 const ghToken = process.env.GH_TOKEN || '';

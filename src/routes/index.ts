@@ -1,5 +1,5 @@
 import express from 'express';
-import getPinnedRepos from '../../services/getPinnedRepos';
+import getPinnedRepos from '../services/getPinnedRepos';
 
 const router = express.Router();
 

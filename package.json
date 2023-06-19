@@ -1,15 +1,17 @@
 {
   "name": "nasc-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "api/index.js",
   "license": "MIT",
   "scripts": {
+    "start": "node ./api/index.js",
     "dev": "NODE_ENV=development tsnd ./src/index.ts",
-    "build": "esbuild ./src/index.ts --platform=node --bundle --minify --outfile=index.js",
+    "build": "esbuild ./src/index.ts --platform=node --bundle --minify --outfile=api/index.js",
     "test": "jest"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
     "@types/jest": "^29.5.2",
     "@typescript-eslint/eslint-plugin": "^5.59.11",
     "@typescript-eslint/parser": "^5.59.11",
